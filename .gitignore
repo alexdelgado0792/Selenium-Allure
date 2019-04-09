@@ -1,0 +1,6 @@
+.vs/
+allure-results/
+bin/
+obj/
+packages/
+nunit-result/
