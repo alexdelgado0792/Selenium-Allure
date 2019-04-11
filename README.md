@@ -19,28 +19,15 @@ Installation Refers to Section 2 of Allure documentation
 
 https://docs.qameta.io/allure/#_installing_a_commandline
 
-Windows platform installation
+1) Install PowerShell 3.
 
-1) Install PowerShell 3 (or later) and .NET Framework 4.5 (or later).
-
-2) Then on PowerShell run this command to install scoop 
-(Refer to https://scoop.sh): 
-            
-iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
-
-
-> If you get an error you might need to change the execution policy (i.e. enable PowerShell):
-Set-ExecutionPolicy RemoteSigned -scope CurrentUser
-
+2) Install [scoop](https://scoop.sh).
+      
 3) Once Scoop is installed then install Allure using Scoop command on PowerShell:
 
-> scoop install allure
+> PS> scoop install allure
 
 
-4) Once Allure is install then in order to generate a report in temporary folder from the data found (test results) in the provided path use next command:
-
-> C:\Users\UserName>allure serve PATH
-
-Example (Windows Command Prompt or PowerShell):
+4) Once Allure is install then in order to generate a report:
 
 > allure serve PATH\allure-results
